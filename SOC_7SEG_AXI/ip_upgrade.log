@@ -1,0 +1,121 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Mar 10 09:07:04 2025
+| Host         : 5CD322B22T running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_SOC_7SEG_AXI_Core1_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_SOC_7SEG_AXI_Core1_0_0 (xilinx.com:user:SOC_7SEG_AXI_Core1:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Mar 10 09:03:40 2025
+| Host         : 5CD322B22T running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_SOC_7SEG_AXI_Core1_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_SOC_7SEG_AXI_Core1_0_0 (xilinx.com:user:SOC_7SEG_AXI_Core1:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Mar 10 08:57:02 2025
+| Host         : 5CD322B22T running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_SOC_7SEG_AXI_Core1_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_SOC_7SEG_AXI_Core1_0_0 (xilinx.com:user:SOC_7SEG_AXI_Core1:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Mar  3 14:55:11 2025
+| Host         : 5CD322B22T running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_SOC_7SEG_AXI_Core1_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_SOC_7SEG_AXI_Core1_0_0 (xilinx.com:user:SOC_7SEG_AXI_Core1:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Mar  3 13:43:43 2025
+| Host         : 5CD322B22T running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_SOC_7SEG_AXI_Core1_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_SOC_7SEG_AXI_Core1_0_0 (xilinx.com:user:SOC_7SEG_AXI_Core1:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Mar  3 10:00:17 2025
+| Host         : 5CD322B22T running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_SOC_7SEG_AXI_Core1_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_SOC_7SEG_AXI_Core1_0_0 (xilinx.com:user:SOC_7SEG_AXI_Core1:1.0) from (Rev. 2) to (Rev. 3)
+

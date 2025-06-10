@@ -1,0 +1,16 @@
+13:54:59 **** Build of configuration Debug for project SOC_7SEG_AXI_APP_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 54341 C:/DevWorks/SOC_7SEG_AXI/VITIS/SOC_7SEG_AXI/export/SOC_7SEG_AXI/SOC_7SEG_AXI.xpfm standalone_ps7_cortexa9_0 C:/DevWorks/SOC_7SEG_AXI/VITIS/SOC_7SEG_AXI_APP_system/Debug/system.bif
+'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+sdcard_gen --xpfm C:/DevWorks/SOC_7SEG_AXI/VITIS/SOC_7SEG_AXI/export/SOC_7SEG_AXI/SOC_7SEG_AXI.xpfm --sys_config SOC_7SEG_AXI --bif C:/DevWorks/SOC_7SEG_AXI/VITIS/SOC_7SEG_AXI_APP_system/Debug/system.bif --bitstream C:/DevWorks/SOC_7SEG_AXI/VITIS/SOC_7SEG_AXI_APP/_ide/bitstream/SOC_7SEG_AXI.bit --elf C:/DevWorks/SOC_7SEG_AXI/VITIS/SOC_7SEG_AXI_APP/Debug/SOC_7SEG_AXI_APP.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/DevWorks/SOC_7SEG_AXI/VITIS/SOC_7SEG_AXI_APP/_ide/bitstream/SOC_7SEG_AXI.bit
+Running C:/Xilinx/Vitis/2024.1/bin/bootgen  -image C:/DevWorks/SOC_7SEG_AXI/VITIS/SOC_7SEG_AXI_APP_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+13:55:05 Build Finished (took 6s.419ms)
+
