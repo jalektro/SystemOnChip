@@ -1,0 +1,208 @@
+14:35:00 DEBUG : Logs will be stored at 'C:/DevWorks/SOC_GPIO/Vitis/IDE.log'.
+14:35:03 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\DevWorks\SOC_GPIO\Vitis\temp_xsdb_launch_script.tcl
+14:35:03 INFO  : Platform repository initialization has completed.
+14:35:03 INFO  : Registering command handlers for Vitis TCF services
+14:35:03 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+14:35:03 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+14:35:03 ERROR : (XSDB Server)'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+14:35:05 INFO  : XSCT server has started successfully.
+14:35:05 INFO  : Successfully done setting XSCT server connection channel  
+14:35:05 INFO  : plnx-install-location is set to ''
+14:35:05 INFO  : Successfully done query RDI_DATADIR 
+14:35:05 INFO  : Successfully done setting workspace for the tool. 
+14:36:27 INFO  : Result from executing command 'getProjects': SOC_GPIO
+14:36:27 INFO  : Result from executing command 'getPlatforms': 
+14:36:27 WARN  : An unexpected exception occurred in the module 'platform project logging'
+14:36:27 INFO  : Platform 'SOC_GPIO' is added to custom repositories.
+14:36:35 INFO  : Platform 'SOC_GPIO' is added to custom repositories.
+14:37:45 INFO  : Result from executing command 'getProjects': SOC_GPIO
+14:37:45 INFO  : Result from executing command 'getPlatforms': SOC_GPIO|C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO/export/SOC_GPIO/SOC_GPIO.xpfm
+14:45:19 INFO  : Checking for BSP changes to sync application flags for project 'SOC_GPIO_app'...
+14:45:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:45:27 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+14:45:27 INFO  : 'jtag frequency' command is executed.
+14:45:27 INFO  : Context for 'APU' is selected.
+14:45:27 INFO  : System reset is completed.
+14:45:30 INFO  : 'after 3000' command is executed.
+14:45:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+14:45:33 INFO  : Device configured successfully with "C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO_app/_ide/bitstream/SOC_GPIO.bit"
+14:45:33 INFO  : Context for 'APU' is selected.
+14:45:33 INFO  : Hardware design and registers information is loaded from 'C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO/export/SOC_GPIO/hw/SOC_GPIO.xsa'.
+14:45:33 INFO  : 'configparams force-mem-access 1' command is executed.
+14:45:33 INFO  : Context for 'APU' is selected.
+14:45:33 INFO  : Sourcing of 'C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO_app/_ide/psinit/ps7_init.tcl' is done.
+14:45:33 INFO  : 'ps7_init' command is executed.
+14:45:33 INFO  : 'ps7_post_config' command is executed.
+14:45:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:45:33 INFO  : The application 'C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO_app/Debug/SOC_GPIO_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:45:33 INFO  : 'configparams force-mem-access 0' command is executed.
+14:45:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO_app/_ide/bitstream/SOC_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO/export/SOC_GPIO/hw/SOC_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO_app/Debug/SOC_GPIO_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:45:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:45:33 INFO  : 'con' command is executed.
+14:45:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:45:33 INFO  : Launch script is exported to file 'C:\DevWorks\SOC_GPIO\Vitis\SOC_GPIO_app_system\_ide\scripts\debugger_soc_gpio_app-default.tcl'
+14:46:11 INFO  : Checking for BSP changes to sync application flags for project 'SOC_GPIO_app'...
+14:46:11 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;SOC_GPIO;SOC_GPIO_app;SOC_GPIO_app_system
+14:46:11 WARN  : Failed to closehw "C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO/export/SOC_GPIO/hw/SOC_GPIO.xsa"
+Reason: C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO/export/SOC_GPIO/hw/SOC_GPIO.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+14:46:11 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;SOC_GPIO;SOC_GPIO_app;SOC_GPIO_app_system
+14:46:11 ERROR : Failed to openhw "C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO/export/SOC_GPIO/hw/SOC_GPIO.xsa"
+Reason: C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO/export/SOC_GPIO/hw/SOC_GPIO.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+14:46:11 ERROR : Failed to update application flags from BSP for 'SOC_GPIO_app'. Reason: null
+java.lang.NullPointerException: null
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305) ~[com.xilinx.sdx.sw_1.0.0.202404291623.jar:?]
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214) ~[com.xilinx.sdx.sw_1.0.0.202404291623.jar:?]
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:64) ~[com.xilinx.sdx.sdk.core_1.0.0.202404291623.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160) ~[com.xilinx.sdx.sdk.core_1.0.0.202404291623.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78) [com.xilinx.sdx.sdk.core_1.0.0.202404291623.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48) [com.xilinx.sdx.sdk.core_1.0.0.202404291623.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91) [com.xilinx.sdk.managedbuilder_1.0.0.202404291623.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateMakefiles(XilinxGnuMakefileGenerator.java:40) [com.xilinx.sdk.managedbuilder_1.0.0.202404291623.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1008) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:?]
+14:46:18 INFO  : Disconnected from the channel tcfchan#2.
+14:46:19 ERROR : Hardaware specification file used in the launch configuration 'Debugger_SOC_GPIO_app-Default' doesn't exist at the location 'C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO/export/SOC_GPIO/hw/SOC_GPIO.xsa'.
+14:47:09 ERROR : Hardaware specification file used in the launch configuration 'Debugger_SOC_GPIO_app-Default' doesn't exist at the location 'C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO/export/SOC_GPIO/hw/SOC_GPIO.xsa'.
+14:49:05 ERROR : Hardaware specification file used in the launch configuration 'Debugger_SOC_GPIO_app-Default' doesn't exist at the location 'C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO/export/SOC_GPIO/hw/SOC_GPIO.xsa'.
+14:49:16 INFO  : Result from executing command 'getProjects': SOC_GPIO
+14:49:16 INFO  : Result from executing command 'getPlatforms': SOC_GPIO|C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO/export/SOC_GPIO/SOC_GPIO.xpfm
+14:49:16 INFO  : Checking for BSP changes to sync application flags for project 'SOC_GPIO_app'...
+14:49:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:49:29 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+14:49:29 INFO  : 'jtag frequency' command is executed.
+14:49:29 INFO  : Context for 'APU' is selected.
+14:49:29 INFO  : System reset is completed.
+14:49:32 INFO  : 'after 3000' command is executed.
+14:49:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+14:49:34 INFO  : Device configured successfully with "C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO_app/_ide/bitstream/SOC_GPIO.bit"
+14:49:34 INFO  : Context for 'APU' is selected.
+14:49:34 INFO  : Hardware design and registers information is loaded from 'C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO/export/SOC_GPIO/hw/SOC_GPIO.xsa'.
+14:49:34 INFO  : 'configparams force-mem-access 1' command is executed.
+14:49:34 INFO  : Context for 'APU' is selected.
+14:49:34 INFO  : Sourcing of 'C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO_app/_ide/psinit/ps7_init.tcl' is done.
+14:49:34 INFO  : 'ps7_init' command is executed.
+14:49:34 INFO  : 'ps7_post_config' command is executed.
+14:49:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:49:35 INFO  : The application 'C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO_app/Debug/SOC_GPIO_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:49:35 INFO  : 'configparams force-mem-access 0' command is executed.
+14:49:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO_app/_ide/bitstream/SOC_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO/export/SOC_GPIO/hw/SOC_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO_app/Debug/SOC_GPIO_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:49:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:49:35 INFO  : 'con' command is executed.
+14:49:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:49:35 INFO  : Launch script is exported to file 'C:\DevWorks\SOC_GPIO\Vitis\SOC_GPIO_app_system\_ide\scripts\debugger_soc_gpio_app-default.tcl'
+14:54:37 INFO  : Disconnected from the channel tcfchan#5.
+14:54:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:54:38 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+14:54:38 INFO  : 'jtag frequency' command is executed.
+14:54:38 INFO  : Context for 'APU' is selected.
+14:54:38 INFO  : System reset is completed.
+14:54:41 INFO  : 'after 3000' command is executed.
+14:54:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+14:54:44 INFO  : Device configured successfully with "C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO_app/_ide/bitstream/SOC_GPIO.bit"
+14:54:44 INFO  : Context for 'APU' is selected.
+14:54:44 INFO  : Hardware design and registers information is loaded from 'C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO/export/SOC_GPIO/hw/SOC_GPIO.xsa'.
+14:54:44 INFO  : 'configparams force-mem-access 1' command is executed.
+14:54:44 INFO  : Context for 'APU' is selected.
+14:54:44 INFO  : Sourcing of 'C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO_app/_ide/psinit/ps7_init.tcl' is done.
+14:54:44 INFO  : 'ps7_init' command is executed.
+14:54:44 INFO  : 'ps7_post_config' command is executed.
+14:54:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:54:44 INFO  : The application 'C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO_app/Debug/SOC_GPIO_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:54:44 INFO  : 'configparams force-mem-access 0' command is executed.
+14:54:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO_app/_ide/bitstream/SOC_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO/export/SOC_GPIO/hw/SOC_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/DevWorks/SOC_GPIO/Vitis/SOC_GPIO_app/Debug/SOC_GPIO_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:54:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:54:44 INFO  : 'con' command is executed.
+14:54:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:54:44 INFO  : Launch script is exported to file 'C:\DevWorks\SOC_GPIO\Vitis\SOC_GPIO_app_system\_ide\scripts\debugger_soc_gpio_app-default.tcl'
+19:38:09 INFO  : Disconnected from the channel tcfchan#6.
