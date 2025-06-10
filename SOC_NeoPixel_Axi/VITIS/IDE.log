@@ -542,3 +542,21 @@ operable program or batch file.
 13:34:21 INFO  : Successfully done query RDI_DATADIR 
 13:34:21 INFO  : Successfully done setting workspace for the tool. 
 13:34:58 INFO  : Projects exported to 'C:\DevWorks\SOC_NeoPixel_Axi\neopixel_RGB.ide.zip'
+20:41:30 DEBUG : Logs will be stored at 'C:/DevWorks/SOC_NeoPixel_Axi/VITIS/IDE.log'.
+20:41:31 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\DevWorks\SOC_NeoPixel_Axi\VITIS\temp_xsdb_launch_script.tcl
+20:41:31 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+20:41:31 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+20:41:31 ERROR : (XSDB Server)'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+20:41:34 INFO  : Platform repository initialization has completed.
+20:41:34 INFO  : Registering command handlers for Vitis TCF services
+20:41:36 INFO  : XSCT server has started successfully.
+20:41:36 INFO  : Successfully done setting XSCT server connection channel  
+20:41:36 INFO  : plnx-install-location is set to ''
+20:41:40 INFO  : Successfully done setting workspace for the tool. 
+20:41:40 INFO  : Successfully done query RDI_DATADIR 

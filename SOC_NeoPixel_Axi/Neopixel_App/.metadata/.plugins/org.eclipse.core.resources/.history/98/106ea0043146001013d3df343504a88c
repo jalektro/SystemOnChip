@@ -1,0 +1,33 @@
+#ifndef NEOPIXEL_MODES_H_
+#define NEOPIXEL_MODES_H_
+
+#include <stdint.h>
+
+// Base address of your Neopixel AXI core
+#ifndef NEOPIXEL_BASEADDR
+#define NEOPIXEL_BASEADDR XPAR_SOC_NEOPIXEL_AXI_CORE_0_S00_AXI_BASEADDR
+#endif
+
+#define RED    0x00FF00
+#define WHITE  0xFFFFFF
+#define GREEN  0xFF0000
+#define BLUE   0x0000FF
+
+#define YELLOW (RED   | GREEN)   // 0xFFFF00
+#define PURPLE (RED   | BLUE)    // 0x00FFFF
+
+
+#define NPX_COUNT 64
+
+#ifndef NEOPIXEL_BASEADDR
+#define NEOPIXEL_BASEADDR XPAR_SOC_NEOPIXEL_AXI_CORE_0_S00_AXI_BASEADDR
+#endif
+
+void mode0_color_cycle(void);
+void mode1_running_light(void);
+void mode2_rainbow_cycle(void);
+void mode3_border_blink(void);
+
+int SetupInterruptSystem(XScuGic *IntcInstancePtr, XGpio *GpioInstancePtr);
+
+#endif /* NEOPIXEL_MODES_H_ */

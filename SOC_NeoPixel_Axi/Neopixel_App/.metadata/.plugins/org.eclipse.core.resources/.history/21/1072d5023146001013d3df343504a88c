@@ -1,0 +1,143 @@
+#include "neopixel_modes.h"
+#include "SOC_NeoPixel_AXI_Core.h"
+#include "sleep.h"
+#include "xgpio.h"
+#include "xscugic.h"
+#include "xil_exception.h"
+
+#define GPIO_DEVICE_ID   XPAR_AXI_GPIO_0_DEVICE_ID
+#define INTR_ID          XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
+#define BTN_CHANNEL      1
+
+// External flag set by ISR
+extern volatile uint32_t btn_flag;
+
+// Simple pixel write
+static inline void set_pixel(int i, uint32_t color) {
+    SOC_NEOPIXEL_AXI_CORE_mWriteReg(
+        NEOPIXEL_BASEADDR,
+        SOC_NEOPIXEL_AXI_CORE_S00_AXI_SLV_REG0_OFFSET + 4 * i,
+        color
+    );
+}
+
+// MODE 0: cycle all pixels: GREEN -> BLUE -> RED (1 second each)
+void mode0_color_cycle(void) {
+    int i;
+    for (;;) {
+        for (i = 0; i < NPX_COUNT; i++) set_pixel(i, GREEN);
+        sleep_A9(1);
+        for (i = 0; i < NPX_COUNT; i++) set_pixel(i, BLUE);
+        sleep_A9(1);
+        for (i = 0; i < NPX_COUNT; i++) set_pixel(i, RED);
+        sleep_A9(1);
+    }
+}
+
+// MODE 1: single running green light, 0.5 s per step
+void mode1_running_light(void) {
+    int i, j;
+    for (;;) {
+        for (i = 0; i < NPX_COUNT; i++) {
+            for (j = 0; j < NPX_COUNT; j++) set_pixel(j, 0);
+            set_pixel(i, GREEN);
+            usleep(500000);
+        }
+    }
+}
+
+// MODE 2: rainbow cycle, shifts every 0.1 s
+void mode2_rainbow_cycle(void) {
+    int i;
+    uint8_t hue = 0;
+    for (;;) {
+        for (i = 0; i < NPX_COUNT; i++) {
+            uint8_t h = (hue + (i * 256 / NPX_COUNT)) & 0xFF;
+            uint32_t r, g, b;
+            if (h < 85) {
+                r = 255 - 3 * h;
+                g = 3 * h;
+                b = 0;
+            }
+            else if (h < 170) {
+                r = 0;
+                g = 255 - 3 * (h - 85);
+                b = 3 * (h - 85);
+            }
+            else {
+                r = 3 * (h - 170);
+                g = 0;
+                b = 255 - 3 * (h - 170);
+            }
+            uint32_t color = (b << 16) | (g << 8) | r;
+            set_pixel(i, color);
+        }
+        hue++;
+        usleep(100000);
+    }
+}
+
+// MODE 3: blink border pixels YELLOW / PURPLE at 1 s intervals
+void mode3_border_blink(void) {
+    const int border_idx[] = {
+        0,1,2,3,4,5,6,7,
+        15,23,31,39,47,55,
+        63,62,61,60,59,58,57,56,
+        48,40,32,24,16,8
+    };
+    const int BORDER_COUNT = sizeof(border_idx) / sizeof(border_idx[0]);
+    int k;
+    for (;;) {
+        for (k = 0; k < BORDER_COUNT; k++) set_pixel(border_idx[k], YELLOW);
+        sleep_A9(1);
+        for (k = 0; k < BORDER_COUNT; k++) set_pixel(border_idx[k], PURPLE);
+        sleep_A9(1);
+    }
+}
+
+// ISR for button presses
+void ButtonISR(void *InstancePtr) {
+    // clear interrupt
+    XGpio_InterruptClear((XGpio *)InstancePtr, BTN_CHANNEL);
+    // stash button bits
+    btn_flag = XGpio_DiscreteRead((XGpio *)InstancePtr, BTN_CHANNEL) & 0xF;
+}
+
+// Hook up GIC + GPIO interrupts
+int SetupInterruptSystem(XScuGic *IntcInstancePtr, XGpio *GpioInstancePtr) {
+    int status;
+    XScuGic_Config *gic_cfg;
+
+    gic_cfg = XScuGic_LookupConfig(XPAR_PS7_SCUGIC_0_DEVICE_ID);
+    if (!gic_cfg) return XST_FAILURE;
+
+    status = XScuGic_CfgInitialize(IntcInstancePtr, gic_cfg, gic_cfg->CpuBaseAddress);
+    if (status != XST_SUCCESS) return status;
+
+    status = XScuGic_Connect(
+        IntcInstancePtr,
+        INTR_ID,
+        (Xil_ExceptionHandler)ButtonISR,
+        (void *)GpioInstancePtr
+    );
+    if (status != XST_SUCCESS) return status;
+
+    XScuGic_Enable(IntcInstancePtr, INTR_ID);
+
+    Xil_ExceptionInit();
+    Xil_ExceptionRegisterHandler(
+        XIL_EXCEPTION_ID_INT,
+        (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+        IntcInstancePtr
+    );
+    Xil_ExceptionEnable();
+
+    status = XGpio_Initialize(GpioInstancePtr, GPIO_DEVICE_ID);
+    if (status != XST_SUCCESS) return status;
+
+    XGpio_SetDataDirection(GpioInstancePtr, BTN_CHANNEL, 0xF);
+    XGpio_InterruptEnable(GpioInstancePtr, BTN_CHANNEL);
+    XGpio_InterruptGlobalEnable(GpioInstancePtr);
+
+    return XST_SUCCESS;
+}

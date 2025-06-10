@@ -14,9 +14,9 @@ targets -set -nocase -filter {name =~"APU*"}
 rst -system
 after 3000
 targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
-fpga -file C:/DevWorks/SOC_NeoPixel_Axi/Neopixel_App/Neopixel_4modes_app/_ide/bitstream/SOC_NeoPixel_Axi.bit
+fpga -file C:/DevWorks/SOC_NeoPixel_Axi/Neopixel_App/Neopixel_4modes_app/_ide/bitstream/Neopixel_buttons.bit
 targets -set -nocase -filter {name =~"APU*"}
-loadhw -hw C:/DevWorks/SOC_NeoPixel_Axi/Neopixel_App/SOC_NeoPixel_Axi/export/SOC_NeoPixel_Axi/hw/SOC_NeoPixel_Axi.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+loadhw -hw C:/DevWorks/SOC_NeoPixel_Axi/Neopixel_App/SOC_NeoPixel_Axi/export/SOC_NeoPixel_Axi/hw/Neopixel_buttons.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
 configparams force-mem-access 1
 targets -set -nocase -filter {name =~"APU*"}
 source C:/DevWorks/SOC_NeoPixel_Axi/Neopixel_App/Neopixel_4modes_app/_ide/psinit/ps7_init.tcl

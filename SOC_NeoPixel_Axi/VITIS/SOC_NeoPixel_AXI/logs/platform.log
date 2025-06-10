@@ -10826,3 +10826,169 @@ TRACE::2025-06-05.16:32:08::SCWMssOS::DEBUG:  swdes dump  C:/DevWorks/SOC_NeoPix
 C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_0||
 
 TRACE::2025-06-05.16:32:08::SCWMssOS::Sw design exists and opened at  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-06-10.20:42:38::SCWPlatform::Trying to open the hw design at C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:38::SCWPlatform::DSA given C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:38::SCWPlatform::DSA absoulate path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:38::SCWPlatform::DSA directory C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw
+TRACE::2025-06-10.20:42:38::SCWPlatform:: Platform Path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:38::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-06-10.20:42:38::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-06-10.20:42:40::SCWPlatform::Opened new HwDB with name design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWReader::Active system found as  SOC_NeoPixel_AXI
+TRACE::2025-06-10.20:42:40::SCWReader::Handling sysconfig SOC_NeoPixel_AXI
+TRACE::2025-06-10.20:42:40::SCWDomain::checking for install qemu data   : 
+TRACE::2025-06-10.20:42:40::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2024.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2025-06-10.20:42:40::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2024.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to open the hw design at C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA given C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA absoulate path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA directory C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Platform Path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to open the hw design at C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA given C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA absoulate path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA directory C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Platform Path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to open the hw design at C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA given C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA absoulate path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA directory C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Platform Path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-10.20:42:40::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to open the hw design at C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA given C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA absoulate path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA directory C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Platform Path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-10.20:42:40::SCWMssOS::Checking the sw design at  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-10.20:42:40::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-06-10.20:42:40::SCWMssOS::No sw design opened at  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-10.20:42:40::SCWMssOS::mss exists loading the mss file  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-10.20:42:40::SCWMssOS::Opened the sw design from mss  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-10.20:42:40::SCWMssOS::Adding the swdes entry C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2025-06-10.20:42:40::SCWMssOS::updating the scw layer about changes
+TRACE::2025-06-10.20:42:40::SCWMssOS::Opened the sw design.  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to open the hw design at C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA given C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA absoulate path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA directory C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Platform Path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-10.20:42:40::SCWMssOS::Checking the sw design at  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-10.20:42:40::SCWMssOS::DEBUG:  swdes dump  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-06-10.20:42:40::SCWMssOS::Sw design exists and opened at  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-10.20:42:40::SCWMssOS:: library already available in sw design:  xilffs:5.2
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to open the hw design at C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA given C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA absoulate path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA directory C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Platform Path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-10.20:42:40::SCWMssOS::Checking the sw design at  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-10.20:42:40::SCWMssOS::DEBUG:  swdes dump  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-06-10.20:42:40::SCWMssOS::Sw design exists and opened at  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-10.20:42:40::SCWMssOS:: library already available in sw design:  xilrsa:1.8
+TRACE::2025-06-10.20:42:40::SCWMssOS::Saving the mss changes C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-10.20:42:40::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-06-10.20:42:40::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-06-10.20:42:40::SCWMssOS::Commit changes completed.
+TRACE::2025-06-10.20:42:40::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-06-10.20:42:40::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to open the hw design at C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA given C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA absoulate path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA directory C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Platform Path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-10.20:42:40::SCWMssOS::Checking the sw design at  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-10.20:42:40::SCWMssOS::DEBUG:  swdes dump  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-06-10.20:42:40::SCWMssOS::Sw design exists and opened at  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-06-10.20:42:40::SCWReader::No isolation master present  
+TRACE::2025-06-10.20:42:40::SCWDomain::checking for install qemu data   : 
+TRACE::2025-06-10.20:42:40::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2024.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2025-06-10.20:42:40::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2024.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to open the hw design at C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA given C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA absoulate path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA directory C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Platform Path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to open the hw design at C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA given C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA absoulate path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA directory C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Platform Path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to open the hw design at C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA given C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA absoulate path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA directory C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Platform Path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-10.20:42:40::SCWMssOS::Checking the sw design at  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-06-10.20:42:40::SCWMssOS::DEBUG:  swdes dump  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-06-10.20:42:40::SCWMssOS::No sw design opened at  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-06-10.20:42:40::SCWMssOS::mss exists loading the mss file  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-06-10.20:42:40::SCWMssOS::Opened the sw design from mss  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-06-10.20:42:40::SCWMssOS::Adding the swdes entry C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2025-06-10.20:42:40::SCWMssOS::updating the scw layer about changes
+TRACE::2025-06-10.20:42:40::SCWMssOS::Opened the sw design.  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-06-10.20:42:40::SCWMssOS::Saving the mss changes C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-06-10.20:42:40::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-06-10.20:42:40::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-06-10.20:42:40::SCWMssOS::Commit changes completed.
+TRACE::2025-06-10.20:42:40::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-06-10.20:42:40::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to open the hw design at C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA given C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA absoulate path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform::DSA directory C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Platform Path C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/hw/SOC_NeoPixel_Axi.xsa
+TRACE::2025-06-10.20:42:40::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-06-10.20:42:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-06-10.20:42:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-06-10.20:42:40::SCWMssOS::Checking the sw design at  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-06-10.20:42:40::SCWMssOS::DEBUG:  swdes dump  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-06-10.20:42:40::SCWMssOS::Sw design exists and opened at  C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-06-10.20:42:40::SCWReader::No isolation master present  

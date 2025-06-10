@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "sleep.h"
+#include "neopixel_modes.h"
+
+static XGpio   Gpio;     // GPIO driver instance
+static XScuGic Intc;     // Interrupt controller instance
+volatile uint32_t btn_flag = 0;
+
+int main() {
+    int status, btn;
+
+    init_platform();
+
+    status = SetupInterruptSystem(&Intc, &Gpio);
+    if (status != XST_SUCCESS) {
+        xil_printf("Interrupt setup failed %d\r\n", status);
+        return XST_FAILURE;
+    }
+
+    xil_printf("This platform will output 4 modes with the Neopixel\n");
+    xil_printf("Press button 0,1,2,3 to select mode\n");
+
+    while (1) {
+        if (btn_flag) {
+            btn = __builtin_ctz(btn_flag);
+            btn_flag = 0;
+            xil_printf("button = %d\r\n", btn);
+            if (btn == 0) {
+                mode0_color_cycle();
+            }
+            else if (btn == 1) {
+                mode1_running_light();
+            }
+            else if (btn == 2) {
+                mode2_rainbow_cycle();
+            }
+            else if (btn == 3) {
+                mode3_border_blink();
+            }
+        }
+    }
+
+    cleanup_platform();
+    return 0;
+}

@@ -1,0 +1,74 @@
+#include "neopixel_modes.h"
+#include "SOC_NeoPixel_AXI_Core.h"
+#include "sleep.h"
+
+// Helper to write a color to one pixel
+static inline void set_pixel(int idx, uint32_t color) {
+    SOC_NEOPIXEL_AXI_CORE_mWriteReg(NEOPIXEL_BASEADDR,
+        SOC_NEOPIXEL_AXI_CORE_S00_AXI_SLV_REG0_OFFSET + 4*idx, color);
+}
+
+// MODE 0: Cycle all pixels through GREEN -> BLUE -> RED, 1 s each
+void mode0_color_cycle(void) {
+    for (;;) {
+        for (int i = 0; i < NPX_COUNT; ++i) set_pixel(i, GREEN);
+        sleep_A9(1);
+        for (int i = 0; i < NPX_COUNT; ++i) set_pixel(i, BLUE);
+        sleep_A9(1);
+        for (int i = 0; i < NPX_COUNT; ++i) set_pixel(i, RED);
+        sleep_A9(1);
+    }
+}
+
+// MODE 1: Single “running” green pixel from 0 -> 63, 0.5 s each
+void mode1_running_light(void) {
+    for (;;) {
+        for (int i = 0; i < NPX_COUNT; ++i) {
+            // clear all
+            for (int j = 0; j < NPX_COUNT; ++j) set_pixel(j, 0);
+            set_pixel(i, GREEN);
+            usleep(500000);   // 0.5 s
+        }
+    }
+}
+
+// MODE 2: Rainbow Cycle
+void mode2_rainbow_cycle(void) {
+    uint8_t hue = 0;
+    for (;;) {
+        for (int i = 0; i < NPX_COUNT; ++i) {
+            // Simple hue->RGB: wheel gives 0–255 hue
+            uint8_t h = (hue + (i * 256 / NPX_COUNT)) & 0xFF;
+            uint32_t r = (h < 85) ? (255 - 3*h) : (h < 170 ? 0 : 3*(h-170));
+            uint32_t g = (h < 85) ? (3*h) : (h < 170 ? (255 - 3*(h-85)) : 0);
+            uint32_t b = (h < 85) ? 0 : (h < 170 ? 3*(h-85) : (255 - 3*(h-170)));
+            uint32_t color = (b<<16) | (g<<8) | r;
+            set_pixel(i, color);
+        }
+        hue++;
+        usleep(100000);  // 0.1 s shift
+    }
+}
+
+// MODE 3: Blink Border in YELLOW / PURPLE, 1 s toggle
+void mode3_border_blink(void) {
+    const int border_idx[] = {
+        // top row 0–7
+        0,1,2,3,4,5,6,7,
+        // right col 15,23,31
+        15,23,31,39,47,55,
+        // bottom row 63->56
+        63,62,61,60,59,58,57,56,
+        // left col 48,40,32
+        48,40,32,24,16,8
+    };
+    const int BORDER_COUNT = sizeof(border_idx)/sizeof(border_idx[0]);
+    for (;;) {
+        for (int k = 0; k < BORDER_COUNT; ++k)
+            set_pixel(border_idx[k], YELLOW);
+        sleep_A9(1);
+        for (int k = 0; k < BORDER_COUNT; ++k)
+            set_pixel(border_idx[k], PURPLE);
+        sleep_A9(1);
+    }
+}
