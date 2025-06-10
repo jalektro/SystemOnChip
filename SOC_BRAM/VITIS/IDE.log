@@ -1,0 +1,202 @@
+15:18:37 DEBUG : Logs will be stored at 'C:/DevWorks/SOC_BRAM/VITIS/IDE.log'.
+15:18:40 INFO  : Registering command handlers for Vitis TCF services
+15:18:40 INFO  : Platform repository initialization has completed.
+15:18:40 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\DevWorks\SOC_BRAM\VITIS\temp_xsdb_launch_script.tcl
+15:18:40 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+15:18:40 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+15:18:40 ERROR : (XSDB Server)'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+15:18:44 INFO  : XSCT server has started successfully.
+15:18:47 INFO  : plnx-install-location is set to ''
+15:18:47 INFO  : Successfully done setting XSCT server connection channel  
+15:18:47 INFO  : Successfully done query RDI_DATADIR 
+15:18:47 INFO  : Successfully done setting workspace for the tool. 
+15:19:42 INFO  : Result from executing command 'getProjects': SOC_BRAM
+15:19:42 INFO  : Result from executing command 'getPlatforms': 
+15:19:42 WARN  : An unexpected exception occurred in the module 'platform project logging'
+15:19:43 INFO  : Platform 'SOC_BRAM' is added to custom repositories.
+15:19:53 INFO  : Platform 'SOC_BRAM' is added to custom repositories.
+15:20:55 INFO  : Result from executing command 'getProjects': SOC_BRAM
+15:20:55 INFO  : Result from executing command 'getPlatforms': SOC_BRAM|C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM/export/SOC_BRAM/SOC_BRAM.xpfm
+13:24:20 DEBUG : Logs will be stored at 'C:/DevWorks/SOC_BRAM/VITIS/IDE.log'.
+13:24:20 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\DevWorks\SOC_BRAM\VITIS\temp_xsdb_launch_script.tcl
+13:24:21 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+13:24:21 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+13:24:21 ERROR : (XSDB Server)'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+13:24:22 INFO  : Platform repository initialization has completed.
+13:24:23 INFO  : Registering command handlers for Vitis TCF services
+13:24:25 INFO  : XSCT server has started successfully.
+13:24:25 INFO  : plnx-install-location is set to ''
+13:24:29 INFO  : Successfully done setting XSCT server connection channel  
+13:24:29 INFO  : Successfully done query RDI_DATADIR 
+13:24:29 INFO  : Successfully done setting workspace for the tool. 
+13:47:35 INFO  : Result from executing command 'getProjects': SOC_BRAM
+13:47:35 INFO  : Result from executing command 'getPlatforms': SOC_BRAM|C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM/export/SOC_BRAM/SOC_BRAM.xpfm
+13:47:35 INFO  : Checking for BSP changes to sync application flags for project 'SOC_BRAM_APP'...
+14:20:22 INFO  : Checking for BSP changes to sync application flags for project 'SOC_BRAM_APP'...
+14:21:04 INFO  : Checking for BSP changes to sync application flags for project 'SOC_BRAM_APP'...
+14:21:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:21:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:21:30 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+14:21:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:21:37 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+14:21:37 INFO  : 'jtag frequency' command is executed.
+14:21:37 INFO  : Context for 'APU' is selected.
+14:21:37 INFO  : System reset is completed.
+14:21:40 INFO  : 'after 3000' command is executed.
+14:21:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+14:21:43 INFO  : Device configured successfully with "C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM_APP/_ide/bitstream/SOC_BRAM.bit"
+14:21:43 INFO  : Context for 'APU' is selected.
+14:21:43 INFO  : Hardware design and registers information is loaded from 'C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM/export/SOC_BRAM/hw/SOC_BRAM.xsa'.
+14:21:43 INFO  : 'configparams force-mem-access 1' command is executed.
+14:21:43 INFO  : Context for 'APU' is selected.
+14:21:43 INFO  : Sourcing of 'C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM_APP/_ide/psinit/ps7_init.tcl' is done.
+14:21:43 INFO  : 'ps7_init' command is executed.
+14:21:43 INFO  : 'ps7_post_config' command is executed.
+14:21:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:21:43 INFO  : The application 'C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM_APP/Debug/SOC_BRAM_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:21:43 INFO  : 'configparams force-mem-access 0' command is executed.
+14:21:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM_APP/_ide/bitstream/SOC_BRAM.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM/export/SOC_BRAM/hw/SOC_BRAM.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM_APP/Debug/SOC_BRAM_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:21:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:21:43 INFO  : 'con' command is executed.
+14:21:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:21:43 INFO  : Launch script is exported to file 'C:\DevWorks\SOC_BRAM\VITIS\SOC_BRAM_APP_system\_ide\scripts\debugger_soc_bram_app-default.tcl'
+14:24:14 INFO  : Disconnected from the channel tcfchan#2.
+14:51:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:51:38 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+14:51:38 INFO  : 'jtag frequency' command is executed.
+14:51:38 INFO  : Context for 'APU' is selected.
+14:51:38 INFO  : System reset is completed.
+14:51:41 INFO  : 'after 3000' command is executed.
+14:51:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-4ba00477-0"}' command is executed.
+14:51:43 INFO  : Device configured successfully with "C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM_APP/_ide/bitstream/SOC_BRAM.bit"
+14:51:43 INFO  : Context for 'APU' is selected.
+14:51:43 INFO  : Hardware design and registers information is loaded from 'C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM/export/SOC_BRAM/hw/SOC_BRAM.xsa'.
+14:51:43 INFO  : 'configparams force-mem-access 1' command is executed.
+14:51:43 INFO  : Context for 'APU' is selected.
+14:51:43 INFO  : Sourcing of 'C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM_APP/_ide/psinit/ps7_init.tcl' is done.
+14:51:44 INFO  : 'ps7_init' command is executed.
+14:51:44 INFO  : 'ps7_post_config' command is executed.
+14:51:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:51:44 INFO  : The application 'C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM_APP/Debug/SOC_BRAM_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:51:44 INFO  : 'configparams force-mem-access 0' command is executed.
+14:51:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-4ba00477-0"}
+fpga -file C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM_APP/_ide/bitstream/SOC_BRAM.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM/export/SOC_BRAM/hw/SOC_BRAM.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM_APP/Debug/SOC_BRAM_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:51:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:51:44 INFO  : 'con' command is executed.
+14:51:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:51:44 INFO  : Launch script is exported to file 'C:\DevWorks\SOC_BRAM\VITIS\SOC_BRAM_APP_system\_ide\scripts\debugger_soc_bram_app-default.tcl'
+14:53:55 INFO  : Disconnected from the channel tcfchan#3.
+14:53:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:53:58 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+14:53:58 INFO  : 'jtag frequency' command is executed.
+14:53:58 INFO  : Context for 'APU' is selected.
+14:53:58 INFO  : System reset is completed.
+14:54:01 INFO  : 'after 3000' command is executed.
+14:54:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-4ba00477-0"}' command is executed.
+14:54:03 INFO  : Device configured successfully with "C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM_APP/_ide/bitstream/SOC_BRAM.bit"
+14:54:03 INFO  : Context for 'APU' is selected.
+14:54:03 INFO  : Hardware design and registers information is loaded from 'C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM/export/SOC_BRAM/hw/SOC_BRAM.xsa'.
+14:54:03 INFO  : 'configparams force-mem-access 1' command is executed.
+14:54:03 INFO  : Context for 'APU' is selected.
+14:54:04 INFO  : Sourcing of 'C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM_APP/_ide/psinit/ps7_init.tcl' is done.
+14:54:04 INFO  : 'ps7_init' command is executed.
+14:54:04 INFO  : 'ps7_post_config' command is executed.
+14:54:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:54:04 INFO  : The application 'C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM_APP/Debug/SOC_BRAM_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:54:04 INFO  : 'configparams force-mem-access 0' command is executed.
+14:54:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-4ba00477-0"}
+fpga -file C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM_APP/_ide/bitstream/SOC_BRAM.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM/export/SOC_BRAM/hw/SOC_BRAM.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/DevWorks/SOC_BRAM/VITIS/SOC_BRAM_APP/Debug/SOC_BRAM_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:54:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:54:04 INFO  : 'con' command is executed.
+14:54:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:54:04 INFO  : Launch script is exported to file 'C:\DevWorks\SOC_BRAM\VITIS\SOC_BRAM_APP_system\_ide\scripts\debugger_soc_bram_app-default.tcl'
+14:59:00 INFO  : Disconnected from the channel tcfchan#4.
