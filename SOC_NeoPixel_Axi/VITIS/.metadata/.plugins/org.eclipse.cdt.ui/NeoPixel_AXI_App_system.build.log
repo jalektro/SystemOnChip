@@ -1,0 +1,16 @@
+16:32:09 **** Build of configuration Debug for project NeoPixel_AXI_App_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 53107 C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/export/SOC_NeoPixel_AXI/SOC_NeoPixel_AXI.xpfm standalone_ps7_cortexa9_0 C:/DevWorks/SOC_NeoPixel_Axi/VITIS/NeoPixel_AXI_App_system/Debug/system.bif
+'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+sdcard_gen --xpfm C:/DevWorks/SOC_NeoPixel_Axi/VITIS/SOC_NeoPixel_AXI/export/SOC_NeoPixel_AXI/SOC_NeoPixel_AXI.xpfm --sys_config SOC_NeoPixel_AXI --bif C:/DevWorks/SOC_NeoPixel_Axi/VITIS/NeoPixel_AXI_App_system/Debug/system.bif --bitstream C:/DevWorks/SOC_NeoPixel_Axi/VITIS/NeoPixel_AXI_App/_ide/bitstream/SOC_NeoPixel_Axi.bit --elf C:/DevWorks/SOC_NeoPixel_Axi/VITIS/NeoPixel_AXI_App/Debug/NeoPixel_AXI_App.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/DevWorks/SOC_NeoPixel_Axi/VITIS/NeoPixel_AXI_App/_ide/bitstream/SOC_NeoPixel_Axi.bit
+Running C:/Xilinx/Vitis/2024.1/bin/bootgen  -image C:/DevWorks/SOC_NeoPixel_Axi/VITIS/NeoPixel_AXI_App_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+16:32:16 Build Finished (took 6s.217ms)
+

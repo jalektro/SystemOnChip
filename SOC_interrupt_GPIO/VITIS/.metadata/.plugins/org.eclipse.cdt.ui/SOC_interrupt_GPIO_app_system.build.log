@@ -1,0 +1,16 @@
+06:23:48 **** Build of configuration Debug for project SOC_interrupt_GPIO_app_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 51140 C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO/export/SOC_interrupt_GPIO/SOC_interrupt_GPIO.xpfm standalone_ps7_cortexa9_0 C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app_system/Debug/system.bif
+'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+sdcard_gen --xpfm C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO/export/SOC_interrupt_GPIO/SOC_interrupt_GPIO.xpfm --sys_config SOC_interrupt_GPIO --bif C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app_system/Debug/system.bif --bitstream C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app/_ide/bitstream/SOC_interrupt_GPIO.bit --elf C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app/Debug/SOC_interrupt_GPIO_app.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app/_ide/bitstream/SOC_interrupt_GPIO.bit
+Running C:/Xilinx/Vitis/2024.1/bin/bootgen  -image C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+06:23:55 Build Finished (took 6s.270ms)
+

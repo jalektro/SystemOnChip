@@ -1,0 +1,44 @@
+int SetupInterruptSystem(XScuGic *IntcInstancePtr, XGpio *GpioInstancePtr)
+{
+    int status;
+    XScuGic_Config *gic_cfg;
+
+    // Look up the GIC configuration
+    gic_cfg = XScuGic_LookupConfig(XPAR_PS7_SCUGIC_0_DEVICE_ID);
+    if (!gic_cfg) return XST_FAILURE;
+
+    // Initialize the GIC driver
+    status = XScuGic_CfgInitialize(IntcInstancePtr, gic_cfg, gic_cfg->CpuBaseAddress);
+    if (status != XST_SUCCESS) return status;
+
+    // Connect our ButtonISR to the GPIO interrupt ID
+    status = XScuGic_Connect(IntcInstancePtr,
+                             INTR_ID,
+                             (Xil_ExceptionHandler)ButtonISR,
+                             (void *)GpioInstancePtr);
+    if (status != XST_SUCCESS) return status;
+
+    // Enable the interrupt at the GIC
+    XScuGic_Enable(IntcInstancePtr, INTR_ID);
+
+    // Initialize the exception table and register the GIC handler
+    Xil_ExceptionInit();
+    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+                                 (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+                                 IntcInstancePtr);
+    Xil_ExceptionEnable();
+
+    // Initialize the GPIO driver
+    status = XGpio_Initialize(GpioInstancePtr, GPIO_DEVICE_ID);
+    if (status != XST_SUCCESS) return status;
+
+    // Set channel directions: channel 1 = inputs, channel 2 = outputs
+    XGpio_SetDataDirection(GpioInstancePtr, BTN_CHANNEL, 0xF);   // 4-bit input
+    XGpio_SetDataDirection(GpioInstancePtr, LED_CHANNEL, 0x0);   // 4-bit output
+
+    // Enable GPIO interrupts on channel 1 (buttons)
+    XGpio_InterruptEnable(GpioInstancePtr, 1);
+    XGpio_InterruptGlobalEnable(GpioInstancePtr);
+
+    return XST_SUCCESS;
+}

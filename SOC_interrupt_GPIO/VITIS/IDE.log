@@ -1,0 +1,165 @@
+06:21:58 DEBUG : Logs will be stored at 'C:/DevWorks/SOC_interrupt_GPIO/VITIS/IDE.log'.
+06:22:00 INFO  : Platform repository initialization has completed.
+06:22:00 INFO  : Registering command handlers for Vitis TCF services
+06:22:00 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\DevWorks\SOC_interrupt_GPIO\VITIS\temp_xsdb_launch_script.tcl
+06:22:01 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+06:22:01 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+06:22:01 ERROR : (XSDB Server)'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+06:22:04 INFO  : XSCT server has started successfully.
+06:22:07 INFO  : plnx-install-location is set to ''
+06:22:07 INFO  : Successfully done setting XSCT server connection channel  
+06:22:07 INFO  : Successfully done query RDI_DATADIR 
+06:22:07 INFO  : Successfully done setting workspace for the tool. 
+06:23:08 INFO  : Result from executing command 'getProjects': SOC_interrupt_GPIO
+06:23:08 INFO  : Result from executing command 'getPlatforms': 
+06:23:08 WARN  : An unexpected exception occurred in the module 'platform project logging'
+06:23:08 INFO  : Platform 'SOC_interrupt_GPIO' is added to custom repositories.
+06:23:16 INFO  : Platform 'SOC_interrupt_GPIO' is added to custom repositories.
+06:23:39 INFO  : Result from executing command 'getProjects': SOC_interrupt_GPIO
+06:23:39 INFO  : Result from executing command 'getPlatforms': SOC_interrupt_GPIO|C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO/export/SOC_interrupt_GPIO/SOC_interrupt_GPIO.xpfm
+06:23:47 INFO  : Checking for BSP changes to sync application flags for project 'SOC_interrupt_GPIO_app'...
+06:24:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+06:24:08 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+06:24:08 INFO  : 'jtag frequency' command is executed.
+06:24:08 INFO  : Context for 'APU' is selected.
+06:24:08 INFO  : System reset is completed.
+06:24:11 INFO  : 'after 3000' command is executed.
+06:24:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+06:24:14 INFO  : Device configured successfully with "C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app/_ide/bitstream/SOC_interrupt_GPIO.bit"
+06:24:14 INFO  : Context for 'APU' is selected.
+06:24:14 INFO  : Hardware design and registers information is loaded from 'C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO/export/SOC_interrupt_GPIO/hw/SOC_interrupt_GPIO.xsa'.
+06:24:14 INFO  : 'configparams force-mem-access 1' command is executed.
+06:24:14 INFO  : Context for 'APU' is selected.
+06:24:14 INFO  : Sourcing of 'C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app/_ide/psinit/ps7_init.tcl' is done.
+06:24:14 INFO  : 'ps7_init' command is executed.
+06:24:14 INFO  : 'ps7_post_config' command is executed.
+06:24:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+06:24:14 INFO  : The application 'C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app/Debug/SOC_interrupt_GPIO_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+06:24:14 INFO  : 'configparams force-mem-access 0' command is executed.
+06:24:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app/_ide/bitstream/SOC_interrupt_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO/export/SOC_interrupt_GPIO/hw/SOC_interrupt_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app/Debug/SOC_interrupt_GPIO_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+06:24:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+06:24:14 INFO  : 'con' command is executed.
+06:24:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+06:24:14 INFO  : Launch script is exported to file 'C:\DevWorks\SOC_interrupt_GPIO\VITIS\SOC_interrupt_GPIO_app_system\_ide\scripts\debugger_soc_interrupt_gpio_app-default.tcl'
+06:24:25 INFO  : Disconnected from the channel tcfchan#3.
+06:37:07 INFO  : Checking for BSP changes to sync application flags for project 'SOC_interrupt_GPIO_app'...
+06:37:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+06:37:16 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+06:37:16 INFO  : 'jtag frequency' command is executed.
+06:37:16 INFO  : Context for 'APU' is selected.
+06:37:16 INFO  : System reset is completed.
+06:37:19 INFO  : 'after 3000' command is executed.
+06:37:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+06:37:21 INFO  : Device configured successfully with "C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app/_ide/bitstream/SOC_interrupt_GPIO.bit"
+06:37:21 INFO  : Context for 'APU' is selected.
+06:37:21 INFO  : Hardware design and registers information is loaded from 'C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO/export/SOC_interrupt_GPIO/hw/SOC_interrupt_GPIO.xsa'.
+06:37:21 INFO  : 'configparams force-mem-access 1' command is executed.
+06:37:21 INFO  : Context for 'APU' is selected.
+06:37:21 INFO  : Sourcing of 'C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app/_ide/psinit/ps7_init.tcl' is done.
+06:37:22 INFO  : 'ps7_init' command is executed.
+06:37:22 INFO  : 'ps7_post_config' command is executed.
+06:37:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+06:37:22 INFO  : The application 'C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app/Debug/SOC_interrupt_GPIO_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+06:37:22 INFO  : 'configparams force-mem-access 0' command is executed.
+06:37:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app/_ide/bitstream/SOC_interrupt_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO/export/SOC_interrupt_GPIO/hw/SOC_interrupt_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app/Debug/SOC_interrupt_GPIO_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+06:37:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+06:37:22 INFO  : 'con' command is executed.
+06:37:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+06:37:22 INFO  : Launch script is exported to file 'C:\DevWorks\SOC_interrupt_GPIO\VITIS\SOC_interrupt_GPIO_app_system\_ide\scripts\debugger_soc_interrupt_gpio_app-default.tcl'
+06:46:24 INFO  : Disconnected from the channel tcfchan#4.
+06:46:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+06:46:25 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+06:46:25 INFO  : 'jtag frequency' command is executed.
+06:46:25 INFO  : Context for 'APU' is selected.
+06:46:25 INFO  : System reset is completed.
+06:46:28 INFO  : 'after 3000' command is executed.
+06:46:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+06:46:30 INFO  : Device configured successfully with "C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app/_ide/bitstream/SOC_interrupt_GPIO.bit"
+06:46:30 INFO  : Context for 'APU' is selected.
+06:46:30 INFO  : Hardware design and registers information is loaded from 'C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO/export/SOC_interrupt_GPIO/hw/SOC_interrupt_GPIO.xsa'.
+06:46:30 INFO  : 'configparams force-mem-access 1' command is executed.
+06:46:31 INFO  : Context for 'APU' is selected.
+06:46:31 INFO  : Sourcing of 'C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app/_ide/psinit/ps7_init.tcl' is done.
+06:46:31 INFO  : 'ps7_init' command is executed.
+06:46:31 INFO  : 'ps7_post_config' command is executed.
+06:46:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+06:46:31 INFO  : The application 'C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app/Debug/SOC_interrupt_GPIO_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+06:46:31 INFO  : 'configparams force-mem-access 0' command is executed.
+06:46:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app/_ide/bitstream/SOC_interrupt_GPIO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO/export/SOC_interrupt_GPIO/hw/SOC_interrupt_GPIO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/DevWorks/SOC_interrupt_GPIO/VITIS/SOC_interrupt_GPIO_app/Debug/SOC_interrupt_GPIO_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+06:46:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+06:46:31 INFO  : 'con' command is executed.
+06:46:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+06:46:31 INFO  : Launch script is exported to file 'C:\DevWorks\SOC_interrupt_GPIO\VITIS\SOC_interrupt_GPIO_app_system\_ide\scripts\debugger_soc_interrupt_gpio_app-default.tcl'
+06:46:36 INFO  : Disconnected from the channel tcfchan#5.

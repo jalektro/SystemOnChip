@@ -1,0 +1,8 @@
+timestamp=[2025-05-17 06:21:59], mode=WORKBENCH_START, duration=0:00:05.167, duration_ms=5167, data={}
+timestamp=[2025-05-17 06:22:00], mode=WORKBENCH_UI_INIT, duration=0:00:00.365, duration_ms=365, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2025-05-17 06:22:00], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.031, duration_ms=31, data={}
+timestamp=[2025-05-17 06:23:16], mode=APP_CREATION, duration=0:00:18.043, duration_ms=18043, data={name=SOC_interrupt_GPIO_app, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=SOC_interrupt_GPIO, application_type=application}
+timestamp=[2025-05-17 06:23:40], mode=PLATFORM_GENERATION, duration=0:00:17.079, duration_ms=17079, data={name=SOC_interrupt_GPIO}
+timestamp=[2025-05-17 06:23:48], mode=BUILD, duration=0:00:01.174, duration_ms=1174, data={name=SOC_interrupt_GPIO_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-17 06:23:55], mode=BUILD, duration=0:00:06.290, duration_ms=6290, data={name=SOC_interrupt_GPIO_app_system, configuration=Debug, clean_build=false}
+timestamp=[2025-05-17 06:37:07], mode=BUILD, duration=0:00:00.815, duration_ms=815, data={name=SOC_interrupt_GPIO_app, configuration=Debug, clean_build=false}
